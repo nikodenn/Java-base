@@ -3,8 +3,6 @@ package generators;
 import java.util.ArrayList;
 
 public abstract class Generator {
-    // protected int baseValue;
-    // protected int currentValue;
     protected int counter;
     protected ArrayList<Integer> generatedValues = new ArrayList<>();
 
@@ -42,5 +40,5 @@ public abstract class Generator {
         return generatedValues.get(counter - 1);
     }
     
-    public abstract int GenerateNext();
+    protected abstract int GenerateNext();
 }

@@ -5,7 +5,7 @@ public class FibGenerator extends Generator {
     	super(0);
     }
 
-    public int GenerateNext() {
+    protected int GenerateNext() {
     	if (counter == 1) {
     		return 1;
     	} else {

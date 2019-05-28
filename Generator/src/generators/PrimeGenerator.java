@@ -5,7 +5,7 @@ public class PrimeGenerator extends Generator {
         super(2);
     }
 
-    public int GenerateNext() {
+    protected int GenerateNext() {
     	for (int i = generatedValues.get(counter - 1) + 1;; i++) {
     		if (isPrime(i)) {
     			return i;
